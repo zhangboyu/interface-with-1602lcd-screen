@@ -1,0 +1,11 @@
+*This wiki page includes three sections:*
+
+*1.The basic information about 1602 LCD.*
+
+*2.How to interface 1602 LCD if we do not have an Arduino.*
+
+*3.How to interface 1602 LCD using an Arduino.*
+
+*--------------------------------------------------------------------------------------------------------------------*
+
+*1.The basic information about 1602 LCD.*
