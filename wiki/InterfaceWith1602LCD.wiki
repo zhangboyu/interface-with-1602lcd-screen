@@ -9,3 +9,5 @@
 *--------------------------------------------------------------------------------------------------------------------*
 
 *1.The basic information about 1602 LCD.*
+
+A liquid-crystal display (LCD) is a flat panel display, electronic visual display, or video display that uses the light modulating properties of liquid crystals. By themselves, Liquid Crystal Displays can be difficult to drive because they require multiplexing, AC drive waveforms, and special voltages. LCD modules make this driving simpler by attaching hardware to the raw glass LCD to assist in some or all of these rudimentary driving tasks. 
