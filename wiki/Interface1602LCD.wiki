@@ -57,6 +57,9 @@ I think this is all we need for the 1602 LCD module. Have fun!
 
 Here is a simple demo. http://youtu.be/WTGCe5ztNoE
 
-Here are other demos that combine the ultrasonic sensor with the LCD screen. The first one shows the distance detected by the ultrasonic sensor. The distance is showed in number and by the blocks in the second line. There is a little battery animation on the upper right corner, just for fun. The second on made an animation of a moving sine wave. The speed of the moving wave is associated with the distance detected by the ultrasonic sensor. The code of both demo is in the source folder.
+Here are other demos that combine the ultrasonic sensor with the LCD screen. The first one shows the distance detected by the ultrasonic sensor. The distance is showed in number and by the blocks in the second line. There is a little battery animation on the upper right corner, just for fun. The second on made an animation of a moving sine wave. The speed of the moving wave is associated with the distance detected by the ultrasonic sensor. The code of both demo is in the source folder. The wire diagram are also included in the source folder.
 
+demo2: http://youtu.be/to-kpUAIAJ0
+
+sine wave demo:  http://youtu.be/hBfCu1Bcdxw
 
