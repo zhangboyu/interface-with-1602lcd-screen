@@ -1,0 +1,50 @@
+#include<LiquidCrystal.h>
+#include<NewPing.h>
+LiquidCrystal lcd(42,40,38,36,34,32,30,28,26,24,22);
+NewPing sonar(12,11,200);
+unsigned char pattern[8][8] = {
+  {0x0,0x0,0x0,0x0,0x0,0x0,0x0,0xff},
+  {0x0,0x0,0x0,0x0,0x0,0x0,0xff,0xff},
+  {0x0,0x0,0x0,0x0,0x0,0xff,0xff,0xff},
+  {0x0,0x0,0x0,0x0,0xff,0xff,0xff,0xff},
+  {0x0,0x0,0x0,0xff,0xff,0xff,0xff,0xff},
+  {0x0,0x0,0xff,0xff,0xff,0xff,0xff,0xff},
+  {0x0,0xff,0xff,0xff,0xff,0xff,0xff,0xff},
+  {0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff}
+};
+unsigned long count = 0;
+unsigned long delaytime;
+int cellNum[16] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1};
+
+void setup() {
+  Serial.begin(9600);
+  // put your setup code here, to run once:
+  for(int i = 0; i < 8; i++){
+    lcd.createChar(i,pattern[i]);
+  }
+  lcd.begin(16,2);
+  lcd.setCursor(0,0);
+  //lcd.blink();
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for(int i = 0; i < 16; i++){
+    if (((cellNum[i] + (count))%14) <= 7){
+      lcd.write((cellNum[i] + (count))%14);
+    }
+    else{
+      lcd.write(14 - ((cellNum[i] + count)%14));   
+    }
+  }
+  delaytime = sonar.ping_median(7)/US_ROUNDTRIP_CM*20;
+  Serial.println(delaytime);
+  if(delaytime > 500){
+    delay(500);
+  }
+  else{
+    delay(delaytime);
+  }
+  count += 1;
+  lcd.setCursor(0,0);
+}
