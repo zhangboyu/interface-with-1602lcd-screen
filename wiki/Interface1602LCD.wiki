@@ -1,4 +1,4 @@
-*This page includes following things.*
+=This page includes following things.=
 
 *1.Basic information about 1602 LCD.*
 
