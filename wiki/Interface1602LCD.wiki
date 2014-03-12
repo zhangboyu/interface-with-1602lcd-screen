@@ -6,6 +6,8 @@
 
 ==[# 3.How to interface 1602 LCD with an arduino.]==
 
+[Interface1602LCD#1.Basic_information_about_1602_LCD.]
+
 *---------------------------------------------------------------------------------------------------------------------*
 
 ==1.Basic information about 1602 LCD.<a name="1"></a>==
