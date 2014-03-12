@@ -1,27 +1,39 @@
+===Installing and building libraries for Arduino:===
+
 http://arduino.cc/en/Guide/Libraries#.UwhCzPRDt8E
 
 http://playground.arduino.cc/Code/Library#.UwhCmvRDt8G
 
+===Built-in LiquidCrystal library in Arduino IDE:===
+
 http://arduino.cc/en/Reference/LiquidCrystal#.Uwg-c_RDt8H
 
-https://www.sparkfun.com/datasheets/LCD/GDM1602K-Extended.pdf
-
-http://en.wikipedia.org/wiki/Intel_MCS-51
-
-http://www.stanford.edu/class/ee281/handouts/lcd_tutorial.pdf
-
-http://pdf1.alldatasheet.com/datasheet-pdf/view/63673/HITACHI/HD44780.html
-
-https://www.sparkfun.com/datasheets/LCD/GDM1602K-Extended.pdf
-
-http://www.trash.net/~luethi/microchip/datasheets/lcd/the_lcd_data_sheet.pdf
-
-http://www.trash.net/~luethi/microchip/datasheets/lcd/lcd_data_sheets.html
-
-http://playground.arduino.cc/Code/Library#.UwhHFvRDt8H
-
 https://bitbucket.org/fmalpartida/new-liquidcrystal/wiki/Home
+
+===LCD 1602 with I2C interface:===
 
 http://arduino-info.wikispaces.com/LCD-Blue-I2C
 
 http://forum.arduino.cc/index.php?topic=157817.0
+
+===LCD 1602 data sheets:===
+
+https://www.sparkfun.com/datasheets/LCD/GDM1602K-Extended.pdf
+
+http://www.stanford.edu/class/ee281/handouts/lcd_tutorial.pdf
+
+http://www.trash.net/~luethi/microchip/datasheets/lcd/the_lcd_data_sheet.pdf
+
+===HD44780 data sheet:===
+
+http://pdf1.alldatasheet.com/datasheet-pdf/view/63673/HITACHI/HD44780.html
+
+Bried overview about HD44780:
+
+http://www.trash.net/~luethi/microchip/datasheets/lcd/lcd_data_sheets.html
+
+===Inter MCS-51 Wikipedia page:===
+
+http://en.wikipedia.org/wiki/Intel_MCS-51
+
+
