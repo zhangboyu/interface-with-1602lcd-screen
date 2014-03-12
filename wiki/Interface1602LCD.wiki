@@ -1,5 +1,7 @@
 =This page includes following things.=
 
+http://smart-prototyping.com/image/data/2_components/Raspberry%20Pi/100913%2016%20Characters%202%20Lines%20LCD%201602%20module%20Yellow%20Backlight%20for%20Raspberry%20Pi/1.jpeg
+
 ==[Interface1602LCD#1.Basic_information_about_1602_LCD.]==
 
 ==[Interface1602LCD#2.How_to_interface_1602_LCD_if_we_do_not_have_an_arduino.]==
