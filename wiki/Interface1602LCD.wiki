@@ -63,7 +63,7 @@ Here are other demos that combine the ultrasonic sensor with the LCD screen. The
 
 [http://youtu.be/hBfCu1Bcdxw demo2] 
 
-<demo2 url="https://www.youtube.com/watch?v=QHWfJlPL0II"/>
+<wiki:video url="https://www.youtube.com/watch?v=QHWfJlPL0II"/>
 
 [http://youtu.be/to-kpUAIAJ0 sine wave demo]
 
