@@ -4,7 +4,7 @@
 
 ==[Interface1602LCD#2.How to interface 1602 LCD if we do not have an arduino.]==
 
-==[Interface1602LCD#3.How to interface 1602 LCD with an arduino.]
+==[Interface1602LCD#3.How to interface 1602 LCD with an arduino.]==
 
 *---------------------------------------------------------------------------------------------------------------------*
 
