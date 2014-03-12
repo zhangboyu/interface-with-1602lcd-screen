@@ -63,6 +63,8 @@ Here are other demos that combine the ultrasonic sensor with the LCD screen. The
 
 [http://youtu.be/hBfCu1Bcdxw demo2] 
 
+<demo2 url="http://youtu.be/hBfCu1Bcdxw"/>
+
 [http://youtu.be/to-kpUAIAJ0 sine wave demo]
 
 I think this is all we need for the 1602 LCD module. Have fun!
