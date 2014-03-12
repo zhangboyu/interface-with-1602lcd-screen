@@ -2,9 +2,9 @@
 
 ==[Interface1602LCD#1.Basic_information_about_1602_LCD.]==
 
-==[Interface1602LCD#2.How to interface 1602 LCD if we do not have an arduino.]==
+==[Interface1602LCD#2.How_to_interface_1602_LCD_if_we_do_not_have_an_arduino.]==
 
-==[Interface1602LCD#3.How to interface 1602 LCD with an arduino.]==
+==[Interface1602LCD#3.How_to_interface_1602_LCD_with_an_arduino.]==
 
 *---------------------------------------------------------------------------------------------------------------------*
 
