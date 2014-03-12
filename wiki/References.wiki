@@ -4,7 +4,7 @@ http://arduino.cc/en/Guide/Libraries#.UwhCzPRDt8E
 
 http://playground.arduino.cc/Code/Library#.UwhCmvRDt8G
 
-===Built-in LiquidCrystal library in Arduino IDE:===
+===Built-in !LiquidCrystal library in Arduino IDE:===
 
 http://arduino.cc/en/Reference/LiquidCrystal#.Uwg-c_RDt8H
 
