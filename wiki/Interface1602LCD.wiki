@@ -1,14 +1,14 @@
 =This page includes following things.=
 
-*1.Basic information about 1602 LCD.*
+==1.Basic information about 1602 LCD.==
 
-*2.How to interface 1602 LCD if we do not have an arduino.*
+==2.How to interface 1602 LCD if we do not have an arduino.==
 
-*3.How to interface 1602 LCD with an arduino.*
+==3.How to interface 1602 LCD with an arduino.==
 
 *---------------------------------------------------------------------------------------------------------------------*
 
-*1.Basic information about 1602 LCD.*
+==1.Basic information about 1602 LCD.==
 
 A Liquid-Crystal Display (LCD) is a flat panel display that uses the light modulating properties of liquid crystals. By themselves, LCD can be difficult to drive because they require multiplexing, AC drive wave forms,and special voltages. LCD modules make this driving simpler by attaching hardware to the raw glass LCD to assist in some or all of these rudimentary driving tasks. LCD modules can be split into two groups: those that have built-in controller and driver chips, and those that have only driver chips. The category of display modules that have built-in controllers can be split again into character LCD modules and graphic LCD modules. The 1602 LCD I used here is a character LCD with built-in controller and driver. The controller in this module is Hitachi HD44780, and here is the full datasheet for this chip. http://pdf1.alldatasheet.com/datasheet-pdf/view/63673/HITACHI/HD44780.html
 
@@ -18,7 +18,7 @@ Luckily, we do not need to read this lengthy datasheet, because it already conne
 
 2).The pin of this entire module. There are 16 or 14 pins (the additional 2 pins are for back-light power) on this module. Their name and function description can be found at here: https://www.sparkfun.com/datasheets/LCD/GDM1602K-Extended.pdf. Don't worry if you can not fully understand it, I'll illustrate them in the second part.
 
-*2.How to interface 1602 LCD if we do not have an arduino.*
+==2.How to interface 1602 LCD if we do not have an arduino.==
 
 Before the advent of arduino, there are many types of microcontrollers which were not advanced like arduino (like Intel MCS-51, also known as 8051). Using them to interface with 1602 LCD is much more complex than using an arduino. However, I feel it is necessary for us to know how it works so that we can have a very solid foundation to start with.
 The 1602 LCD is mainly used to show something, so we need to tell it what to display, and this kind of information is data. We also need to tell it where or how to display, this kind of information is command. These actions are "write" since we are actually something to the LCD. The opposite direction, reading, is also important, because we need to know the current status of the LCD so that we can decide if it is a right time to write data/command. As I mentioned in the first section, this module has 14/16 pins, and these pins provide us the way to communicate with LCD module. There are two ways to communicate with the LCD, one uses all the eight data lines and another one uses only four data lines (D7-D4). There are no substantial difference between these two ways, the later one simply write/read the data in two clock cycles: first cycle write/read the most four significant bits (D7-D4) and the second cycle read write/read the least four significant bits (D3-D0) but with the same physical pin. Due to this reason, I will only show how to use the eight data lines version at here.
@@ -43,7 +43,7 @@ Following these steps, we can let the screen display every thing (actually not "
 
 I also wrote an arduino sketch which contains some functions that implemented almost all of the functionalities in the built-in library and even some detailed control abilities. Just with several minor modifications, you can apply this sketch to other microprocessors. There are some limitations with my code, anyway, it is a good starting point. I also wrote a lot of comments with the code just to make it easy to understand and modified. You can find this sketch in the source section. It's called "basic_method."
 
-*3.How to interface 1602 LCD with an arduino.*
+==3.How to interface 1602 LCD with an arduino.==
 
 Fortunately, the steps I mentioned in the second part have been significantly simplified in the arduino environment. There is a built-in library called "LiquidCrystal?" in the arduino IDE. After include it at the head of your sketch, you can use all the functions in this library, and this is a far more easy way to interface with the LCD. First, we need to create a variable of type LiquidCrystal? called "lcd"(you can name it whatever you want) with proper parameters. Like this: LiquidCrystal? lcd(12,11,10,5,4,3,2);. (This is like a class instantiation in Java.) Then at the setup block or the any other blocks you can use the function calls like: lcd.begin(16,2); (This function implements the initialization process in the second section) or lcd.setCursor(0,0);lcd.write(0x31); (These two functions will write "1" at first cell of the first line.) Here (http://arduino.cc/en/Reference/LiquidCrystal#.Uwg-c_RDt8H) is the list of all the functions in this library and their description.
 
