@@ -57,14 +57,18 @@ There are two things we need to pay special attention to if we want to use the I
 
 2).We have to use specific pins to communicate with the IIC devices. On Arduino UNO, the SDA corresponds to analog input pin A4, and SCL corresponds to analog input A5. On Mega2560, SDA corresponds to pin 20 and SCL sorresponds to pin 21.
 
-[http://youtu.be/WTGCe5ztNoE Here] is a simple demo. 
+Here is a simple demo. 
+
+<wiki:video url="http://youtu.be/WTGCe5ztNoE"/>
 
 Here are other demos that combine the ultrasonic sensor with the LCD screen. The first one shows the distance detected by the ultrasonic sensor. The distance is showed in number and by the blocks in the second line. There is a little battery animation on the upper right corner, just for fun. The second on made an animation of a moving sine wave. The speed of the moving wave is associated with the distance detected by the ultrasonic sensor. The code of both demo is in the source folder. The wire diagram are also included in the source folder. (Note that the wire diagram for demo1 is slightly different from the diagram that I actually used, because I can't find the LCD 1602 module that have an I2C chip with it. The code for demo1 will work perfectly for this wire diagram after some minor modifications.)
 
-[http://youtu.be/hBfCu1Bcdxw demo2] 
+Demo2 
 
-<wiki:video url="https://www.youtube.com/watch?v=QHWfJlPL0II"/>
+<wiki:video url="http://youtu.be/hBfCu1Bcdxw"/>
 
-[http://youtu.be/to-kpUAIAJ0 sine wave demo]
+Sine wave demo
+
+<wiki:video url="http://youtu.be/to-kpUAIAJ0"/>
 
 I think this is all we need for the 1602 LCD module. Have fun!
