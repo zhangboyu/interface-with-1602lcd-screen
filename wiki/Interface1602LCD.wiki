@@ -1,6 +1,6 @@
 =This page includes following things.=
 
-<a href="#1">1.Basic information about 1602 LCD.</a>
+==[# 1.Basic information about 1602 LCD.]==
 
 ==[# 2.How to interface 1602 LCD if we do not have an arduino.]==
 
