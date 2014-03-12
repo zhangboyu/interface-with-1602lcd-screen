@@ -28,12 +28,10 @@ http://www.trash.net/~luethi/microchip/datasheets/lcd/the_lcd_data_sheet.pdf
 
 http://pdf1.alldatasheet.com/datasheet-pdf/view/63673/HITACHI/HD44780.html
 
-Bried overview about HD44780:
+===Bried overview about HD44780:===
 
 http://www.trash.net/~luethi/microchip/datasheets/lcd/lcd_data_sheets.html
 
 ===Inter MCS-51 Wikipedia page:===
 
 http://en.wikipedia.org/wiki/Intel_MCS-51
-
-
