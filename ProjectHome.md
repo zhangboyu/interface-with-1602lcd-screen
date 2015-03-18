@@ -1,0 +1,1 @@
+In this midterm project I interfaced with a 1602 LCD screen. The screen I used has PCF8574 chip with it, so it can talk with arduino by IIC bus, which reduce the wires from 16(or maybe 14) to 4. I included all the resources for 1602 LCD with and without IIC bus in this project.
